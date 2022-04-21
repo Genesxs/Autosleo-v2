@@ -1,0 +1,39 @@
+//Marcas
+php artisan infyom:scaffold Trademark --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/trydemarks.json
+php artisan infyom:rollback Trademark scaffold 
+
+//tipo de vehículo
+php artisan infyom:scaffold Type_vehicle --prefix=Backend --factory --seeder --fieldsFile=./_etc/json_scaffolding/type_vehicles.json
+php artisan infyom:rollback Type_vehicle scaffold 
+
+//Tipo de sevicio
+php artisan infyom:scaffold TypeService --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/type_services.json
+php artisan infyom:rollback Type_service scaffold
+
+//Servicio
+php artisan infyom:scaffold Service --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/services.json
+php artisan infyom:rollback Service scaffold
+
+//Proveedor
+php artisan infyom:scaffold Provider --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/providers.json
+php artisan infyom:rollback Provider scaffold
+
+//Repuesto e Insumos
+php artisan infyom:scaffold SparePart --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/SpareParts.json
+php artisan infyom:rollback SparePart scaffold
+
+//Descuentos
+php artisan infyom:scaffold Discount --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/discount.json
+php artisan infyom:rollback Discount scaffold
+
+//Proveedor con repuestos
+php artisan infyom:scaffold ProviderSparepart --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/provider_spare_parts.json
+php artisan infyom:rollback ProviderSparepart scaffold
+
+//Descuentos
+php artisan infyom:scaffold Employee --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/employees.json
+php artisan infyom:rollback Employee scaffold
+
+//tipo repuesto
+php artisan infyom:scaffold TypeSparePart --prefix=Backend --factory --seeder --paginate=5 --fieldsFile=./_etc/json_scaffolding/typeSparePart.json
+php artisan infyom:rollback TypeSparePart scaffold

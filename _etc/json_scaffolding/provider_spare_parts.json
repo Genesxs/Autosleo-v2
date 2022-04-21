@@ -1,0 +1,54 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "provider_id",
+        "dbType": "integer:unsigned:foreign,providers,id",
+        "htmlType": "select",
+        "validations": "required",
+        "searchable": true,
+        "inIndex": true,
+        "relation": "mt1,Provider,provider_id,id"
+    },
+    {
+        "name": "spare_part_id",
+        "dbType": "integer:unsigned:foreign,spare_parts,id",
+        "htmlType": "select",
+        "validations": "required",
+        "searchable": true,
+        "inIndex": true,
+        "relation": "mt1,SparePart,spare_part_id,id"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }     
+]
